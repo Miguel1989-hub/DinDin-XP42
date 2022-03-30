@@ -140,9 +140,6 @@
 }
 
 
-
-
-
 .container-footer {
     background-color:#419488;
     display: grid;
@@ -198,3 +195,104 @@ padding-top: 0.75rem;
 text-align: center;
 width: 16.188rem;
 }
+
+
+@media screen and (max-width:480px) {
+    .container-header {
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 0.5rem;
+    }
+ 
+    .logo-header--img {
+        padding: 0;
+        padding-top: 1.25rem;
+    }
+ 
+    .nav {
+        padding: 0;
+        padding-bottom: 0.8rem;
+    }
+ 
+    .nav-items{
+        margin-right: 0.2rem;
+        font-size: 1rem;
+    }
+
+    
+    .container-top {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "texto"
+            "texto2";
+        gap: 2rem;
+    }
+
+    .top-title {
+        text-align: center;
+    }
+
+    .top-text {
+        text-align: center;
+    }
+    
+    .top-img {
+        display: none;
+    }
+
+    .cursos-card {
+        grid-template-columns: 1fr;
+        gap: 0 53px;
+        width: 29.375rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .cursos-card-wrapper {
+        text-align: center;
+    }
+
+    .curso-name {
+        padding-top:2rem;
+    }
+
+    .curso-text {
+        margin: 0 auto;
+
+    }
+
+    .line-cards {
+        width: 27rem;
+        margin: 3rem auto;
+    }
+
+     .container-footer {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-areas: 
+         "logo" 
+         "nav" 
+         "aside";
+     }
+ 
+     .footer-logo {
+         align-items: center;
+         justify-self: center;
+         margin-left: 0;
+         padding: 1rem 0;
+     }
+ 
+     .footer-nav {
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         gap: 1.6rem;
+         padding: 1rem 0;
+     }
+ 
+     .footer-other {
+         padding: 2rem 0;
+     }
+ 
+ }

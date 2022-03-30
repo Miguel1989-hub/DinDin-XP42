@@ -84,16 +84,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .form-container {
     display: flex;
     flex-direction: column;
@@ -106,15 +96,6 @@
     grid-area: img;
     padding-top: 5.125rem;
 }
-
-
-
-
-
-
-
-
-
 
 .container-footer {
     background-color:#419488;
@@ -171,3 +152,86 @@ padding-top: 0.75rem;
 text-align: center;
 width: 16.188rem;
 }
+
+
+@media screen and (max-width:480px) {
+    .container-header {
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 0.5rem;
+    }
+ 
+    .logo-header--img {
+        padding: 0;
+        padding-top: 1.25rem;
+    }
+ 
+    .nav {
+        padding: 0;
+        padding-bottom: 0.8rem;
+    }
+ 
+    .nav-items{
+        margin-right: 0.2rem;
+        font-size: 1rem;
+    }
+
+    .container-form {
+        grid-template-columns: 1fr;
+        grid-area: "form";
+        gap: 0;
+    }
+
+     .form-container {
+        padding: 0;
+        width: 26rem;
+        margin: 0 auto;
+    }
+
+     .form-input-name {
+        width: 26rem;
+    }
+
+     .form-input-email {
+        width: 26rem;
+    }
+
+     .form-input-text {
+        width: 26rem;
+    }
+ 
+     .form-image {
+        display: none;
+    }
+
+
+     .container-footer {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-areas: 
+         "logo" 
+         "nav" 
+         "aside";
+     }
+ 
+     .footer-logo {
+         align-items: center;
+         justify-self: center;
+         margin-left: 0;
+         padding: 1rem 0;
+     }
+ 
+     .footer-nav {
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         gap: 1.6rem;
+         padding: 1rem 0;
+     }
+ 
+     .footer-other {
+         padding: 2rem 0;
+     }
+ 
+ }

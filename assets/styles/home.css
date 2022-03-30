@@ -355,3 +355,201 @@
     text-align: center;
     width: 16.188rem;
 }
+
+
+@media screen and (max-width:480px) {
+   .container-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+   }
+
+   .logo-header--img {
+       padding: 0;
+       padding-top: 1.25rem;
+   }
+
+   .nav {
+       padding: 0;
+       padding-bottom: 0.8rem;
+   }
+
+   .nav-items{
+       margin-right: 0.2rem;
+       font-size: 1rem;
+   }
+
+   .container-banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 5rem;
+   }
+
+   .text-banner {
+       text-align: center;
+       margin: auto;
+   }
+
+   .text-banner h1, p, a {
+        margin-left: 0;
+   }
+
+   .banner {
+       display: none;
+   }
+
+   .container-cursos {
+       grid-template-columns: 1fr;
+       padding-bottom: 5.125rem;
+   }
+
+   .card-cursos {
+        padding-top: 5.125rem;
+        padding-bottom: 0;
+        margin: auto;
+   }
+
+   .container-aboutUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    padding-top: 5.125rem;
+    grid-template-areas: 
+    "titulo"
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    ;
+      
+}
+    .sobreNos-title {
+        width: 28.125rem;
+        text-align: center;
+        margin: auto;
+        font-size: 2.100rem;
+    }
+
+    .sobreNos-card1{
+        flex-direction: column;
+        margin-top: 4.125rem;
+        margin-bottom: 0;
+        margin: 0 auto;
+    }
+
+    .sobreNos-card2 {
+        flex-direction: column;
+        margin-top: 4.125rem;
+        margin: 0 auto;
+        padding-top: 3rem;
+    }
+
+    .sobreNos-card3 {
+        flex-direction: column;
+        margin-top: 4.125rem;
+        margin: 0 auto;
+        padding-top: 3rem;
+    }
+
+    .sobreNos-card4 {
+        flex-direction: column;
+        margin-top: 4.125rem;
+        margin: 0 auto;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .container-maisConteudo {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "title"
+        "card1" 
+        'card2' 
+        'card3'
+        "btn";
+        padding: 4.125rem 0 0 0;
+    }
+
+    .maisConteudo-title {
+        width: 28.125rem;
+        line-height: 2.3rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .maisConteudo-card1 {
+        margin: 0 auto;
+    }
+
+    .maisConteudo-card2 {
+        margin: 0 auto;
+    }
+
+    .maisConteudo-card3 {
+        margin: 0 auto;
+    }
+    
+    .btn-verTodos {
+        margin: 5rem auto;
+    }
+
+    .container-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "logo" 
+        "nav" 
+        "aside";
+    }
+
+    .footer-logo {
+        align-items: center;
+        justify-self: center;
+        margin-left: 0;
+        padding: 1rem 0;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem;
+        padding: 1rem 0;
+    }
+
+    .footer-other {
+        padding: 2rem 0;
+    }
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -175,3 +175,111 @@ padding-top: 0.75rem;
 text-align: center;
 width: 16.188rem;
 }
+
+
+@media screen and (max-width:480px) {
+    .container-header {
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 0.5rem;
+    }
+ 
+    .logo-header--img {
+        padding: 0;
+        padding-top: 1.25rem;
+    }
+ 
+    .nav {
+        padding: 0;
+        padding-bottom: 0.8rem;
+    }
+ 
+    .nav-items{
+        margin-right: 0.2rem;
+        font-size: 1rem;
+    }
+
+    .container-top {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "texto"
+            "texto2 "
+    }
+
+    .top-title{
+        padding-top: 5rem;
+        text-align: center;
+    }  
+
+    .top-text {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+   .top-img {
+       display:none;
+   }
+
+   
+   .container-post {
+        display: grid;
+        grid-template-columns: 1fr;
+   }
+
+   .post {
+    justify-self: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 6.25rem;
+    width: 29.375rem;
+}
+
+    .post1, .post3, .post5 {
+        text-align: center;
+        margin: 0 auto;
+        justify-self: end;
+    padding-top: 6.25rem;
+    width: 29.375rem;
+}
+
+    .post-img {
+        width: 27rem;
+    }
+
+    .post-text {
+        width: 27rem;
+        text-align: center;
+        margin: auto;
+    }
+
+
+     .container-footer {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-areas: 
+         "logo" 
+         "nav" 
+         "aside";
+     }
+ 
+     .footer-logo {
+         align-items: center;
+         justify-self: center;
+         margin-left: 0;
+         padding: 1rem 0;
+     }
+ 
+     .footer-nav {
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         gap: 1.6rem;
+         padding: 1rem 0;
+     }
+ 
+     .footer-other {
+         padding: 2rem 0;
+     }
+ 
+ }
