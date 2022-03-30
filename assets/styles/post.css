@@ -1,0 +1,273 @@
+.container-header {
+    align-items: center;
+    background-color:#2E948A;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    min-height: 7.313rem;
+    margin: 0 auto;
+}
+
+.logo-header--img {
+    padding-left: 5.125rem;
+}
+
+.nav {
+    padding-right: 6.438rem;
+}
+
+.nav-items {
+    color: #FDFDFD;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 2.5rem;
+    text-transform: uppercase;
+}
+
+.container-article {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-bottom: 4.688rem;
+}
+   
+
+.wrapper-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.wrapper-title h1 {
+    margin: 6.938rem 0 0 0;
+    color: #ff4081;
+    font-size: 3.125rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper-title span {
+    margin: 0 0 4.688rem 0;
+    color: #9D9D9D;
+    font-size: 1.125rem;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.post-img {
+    height: 29.063rem;
+    width: 64.5rem;
+    background-color: #C5C5C5;
+    margin: 0 0 3.688rem 0;
+}
+
+.post h2 {
+    padding-top: 2.500rem;
+    color: #419488;
+    font-size: 1.625rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.post p {
+    color: #000000;
+    font-size: 1.125rem;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.post:last-child {
+    padding-bottom: 4.688rem;
+}
+
+
+
+
+
+
+
+
+
+.container-cursos {
+     background-color: #F6F6F6;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-areas: 
+     "title title title"
+     "card1 card2 card3"
+     ;
+}
+
+.cursos-title {
+    color: #ff4081;
+    font-size: 3.125rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: title;
+    margin: 0;
+    text-align: center;
+    padding: 5rem 0;
+
+}
+
+
+.card-cursos1 {
+  padding-bottom: 8.125rem;
+  justify-self: center;
+  text-align: center;
+  grid-area: card1;
+}
+
+
+.card-cursos2 {
+    padding-bottom: 8.125rem;
+    justify-self: center;
+    text-align: center;
+    grid-area: card2;
+  }
+
+
+.card-cursos3 {
+    padding-bottom: 8.125rem;
+    justify-self: center;
+    text-align: center;
+    grid-area: card3;
+  }
+
+.card-cursos--img1 {
+    width:18rem;
+    height:16.875rem;
+}
+
+.card-cursos--img2 {
+    width: 14.875rem;
+    height:16.875rem;
+}
+
+.card-cursos--img3 {
+    width: 11.688rem;
+    height:16.875rem;
+}
+
+.card-cursos--title {
+    color: #FF4081;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.563rem;
+    padding-top: 2.0rem;
+}
+
+.card-cursos--paragraph {
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    margin: 0.5rem auto;
+    width: 18.313rem;
+    padding-bottom: 1.4rem;
+
+}
+
+.card-cursos--btn {
+    background: #FF4081;
+    border-radius: 3.875rem;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 1.30rem;
+    height: 3.188rem;
+    padding-top: 1.0rem;
+    width: 14.563rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-footer {
+    background-color:#419488;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo nav aside";
+    max-width: 1440px;
+    min-height: 12.938rem;
+    margin: 0 auto;
+}
+
+.footer-logo {
+align-self: center;
+grid-area: logo;
+margin-left: 3rem;
+}
+
+.footer-nav {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.6rem;
+grid-area: nav;
+}
+
+.footer-nav-links {
+color: #FFFFFF;
+font-size: 1.25rem;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+line-height: 1.25rem;
+}
+
+.footer-other {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.6rem;
+grid-area: aside;
+}
+
+.footer-other-link {
+border: 0.13rem solid #FFFFFF;
+border-radius: 3.875rem;
+color: #FFFFFF;
+font-size: 1.25rem;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+height: 3.188rem;
+line-height: 1.25rem;
+padding-top: 0.75rem;
+text-align: center;
+width: 16.188rem;
+}

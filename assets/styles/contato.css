@@ -1,0 +1,173 @@
+.container-header {
+    align-items: center;
+    background-color:#2E948A;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    min-height: 7.313rem;
+    margin: 0 auto;
+}
+
+.logo-header--img {
+    padding-left: 5.125rem;
+}
+
+.nav {
+    padding-right: 6.438rem;
+}
+
+.nav-items {
+    color: #FDFDFD;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 2.5rem;
+    text-transform: uppercase;
+}
+
+.container-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "form img"
+    "form img"
+    ;
+    gap: 0 6.5rem;
+    padding-bottom: 6.25rem;
+}
+
+.form-title {
+    color: #FF4081;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 6.25rem;
+}
+
+.form-input-name {
+    width: 30.813rem;
+    height: 2rem;
+    border: 1px solid #686868;
+    border-radius: 0.438rem;
+    outline: none;
+}
+
+.form-input-email {
+    width: 30.813rem;
+    height: 2rem;
+    border: 1px solid #686868;
+    border-radius: 0.438rem;
+    outline: none;
+}
+
+.form-input-text {
+    width: 30.813rem;
+    height: 12.063rem;
+    border: 1px solid #686868;
+    border-radius: 0.438rem;
+    resize: none;
+    outline: none;
+}
+
+.form-input-submit {
+    width: 6.75rem;
+    height: 2rem;
+    background: #FF4081;
+    border-radius: 3.125rem;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+    grid-area: form;
+    padding-left: 8.5rem;
+}
+
+.form-image {
+    grid-area: img;
+    padding-top: 5.125rem;
+}
+
+
+
+
+
+
+
+
+
+
+.container-footer {
+    background-color:#419488;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo nav aside";
+    max-width: 1440px;
+    min-height: 12.938rem;
+    margin: 0 auto;
+}
+
+.footer-logo {
+align-self: center;
+grid-area: logo;
+margin-left: 3rem;
+}
+
+.footer-nav {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.6rem;
+grid-area: nav;
+}
+
+.footer-nav-links {
+color: #FFFFFF;
+font-size: 1.25rem;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+line-height: 1.25rem;
+}
+
+.footer-other {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.6rem;
+grid-area: aside;
+}
+
+.footer-other-link {
+border: 0.13rem solid #FFFFFF;
+border-radius: 3.875rem;
+color: #FFFFFF;
+font-size: 1.25rem;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+height: 3.188rem;
+line-height: 1.25rem;
+padding-top: 0.75rem;
+text-align: center;
+width: 16.188rem;
+}
