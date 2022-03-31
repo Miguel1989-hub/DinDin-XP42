@@ -1,9 +1,8 @@
-
 /* header*/
 
 .container-header {
     align-items: center;
-    background-color:#2E948A;
+    background-color: #2E948A;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-between;
@@ -14,6 +13,10 @@
 
 .logo-header--img {
     padding-left: 5.125rem;
+}
+
+.logo-header--img:hover {
+    transform: scale(1.02);
 }
 
 .nav {
@@ -27,7 +30,13 @@
     font-family: 'Ubuntu', sans-serif;
     margin-right: 2.5rem;
     text-transform: uppercase;
+    display: inline-block;
 }
+
+.nav-items:hover {
+    transform: scale(1.03);
+}
+
 
 /* main */
 
@@ -45,7 +54,8 @@
 
 .text-banner h1 {
     color: #FF4081;
-    font-family: 'Ubuntu', sans-serif;;
+    font-family: 'Ubuntu', sans-serif;
+    ;
     font-weight: 700;
     font-size: 3.75rem;
     margin: 0 0 0 2rem;
@@ -53,7 +63,8 @@
 
 .text-banner p {
     color: #555555;
-    font-family: 'Ubuntu', sans-serif;;
+    font-family: 'Ubuntu', sans-serif;
+    ;
     font-weight: 400;
     font-size: 1.688rem;
     line-height: 1.900rem;
@@ -65,12 +76,20 @@
     border-radius: 3.875rem;
     color: #FF4081;
     display: inline-block;
-    font-family: 'Ubuntu', sans-serif;;
+    font-family: 'Ubuntu', sans-serif;
+    ;
     font-weight: 400;
     font-size: 1.688rem;
     margin-left: 2rem;
     margin-top: 1.8rem;
     padding: 0.4rem 1.2rem;
+    transition: 0.25s;
+}
+
+.text-banner a:hover {
+    color: #FFFFFF;
+    background-color: #FF4081;
+    transform: scale(1.03);
 }
 
 
@@ -84,26 +103,31 @@
 }
 
 .card-cursos {
-  padding-top:  8.125rem;
-  padding-bottom: 8.125rem;
-  justify-self: center;
-  text-align: center;
+    padding-top: 8.125rem;
+    padding-bottom: 8.125rem;
+    justify-self: center;
+    text-align: center;
 }
 
+.card-cursos:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+
+}
 
 .card-cursos--img1 {
-    width:18rem;
-    height:16.875rem;
+    width: 18rem;
+    height: 16.875rem;
 }
 
 .card-cursos--img2 {
     width: 14.875rem;
-    height:16.875rem;
+    height: 16.875rem;
 }
 
 .card-cursos--img3 {
     width: 11.688rem;
-    height:16.875rem;
+    height: 16.875rem;
 }
 
 .card-cursos--title {
@@ -138,9 +162,10 @@
     height: 3.188rem;
     padding-top: 1.0rem;
     width: 14.563rem;
-
-
 }
+
+
+
 
 
 /* seção 03 */
@@ -148,12 +173,12 @@
 .container-aboutUs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "titulo titulo"
-    "card1 card3"
-    "card2 card4"
+    grid-template-areas:
+        "titulo titulo"
+        "card1 card3"
+        "card2 card4"
     ;
-    padding: 7.5rem 0 10.938rem 3rem;   
+    padding: 7.5rem 0 10.938rem 3rem;
 }
 
 .sobreNos-title {
@@ -161,7 +186,7 @@
     font-size: 2.313rem;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
-    color:#009688;
+    color: #009688;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 4.875rem;
@@ -207,14 +232,14 @@
     font-size: 1.1rem;
     font-weight: 300;
     font-family: 'Nunito', sans-serif;
-    color:#000000;
+    color: #000000;
 }
 
 .sobreNos-card-name {
     font-size: 1.1rem;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
-    color:#000000;
+    color: #000000;
 }
 
 /* seção 04 */
@@ -223,10 +248,10 @@
     background-color: #E5E5E5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "title title title"
-    "card1 card2 card3"
-    ". btn ."
+    grid-template-areas:
+        "title title title"
+        "card1 card2 card3"
+        ". btn ."
     ;
     padding: 5.688rem 0 3.313rem 3rem;
 }
@@ -245,14 +270,29 @@
     padding-top: 4.563rem;
 }
 
+.maisConteudo-card1:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
 .maisConteudo-card2 {
     grid-area: card2;
     padding-top: 4.563rem;
 }
 
+.maisConteudo-card2:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
 .maisConteudo-card3 {
     grid-area: card3;
     padding-top: 4.563rem;
+}
+
+.maisConteudo-card3:hover {
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 .maisConteudo-card-img {
@@ -283,7 +323,7 @@
 }
 
 .btn-verTodos {
-    color:#FF4081;
+    color: #FF4081;
     border: 0.13rem solid #FF4081;
     border-radius: 4rem;
     font-size: 1.563rem;
@@ -296,18 +336,25 @@
     text-align: center;
     width: 18.03rem;
     justify-self: self-start;
+    transition: 0.25s;
+}
+
+.btn-verTodos:hover {
+    color: #FFFFFF;
+    background-color: #FF4081;
+    transform: scale(1.03);
 }
 
 
 
 .container-footer {
-        background-color:#419488;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "logo nav aside";
-        max-width: 1440px;
-        min-height: 12.938rem;
-        margin: 0 auto;
+    background-color: #419488;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo nav aside";
+    max-width: 1440px;
+    min-height: 12.938rem;
+    margin: 0 auto;
 }
 
 .footer-logo {
@@ -315,6 +362,16 @@
     grid-area: logo;
     margin-left: 3rem;
 }
+
+.footer-logo:hover {
+    transform: scale(1.03);
+}
+
+.footer-logo-link {
+    align-self: center;
+    grid-area: logo;
+}
+
 
 .footer-nav {
     display: flex;
@@ -331,6 +388,10 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     line-height: 1.25rem;
+}
+
+.footer-nav-links:hover {
+    transform: scale(1.1);
 }
 
 .footer-other {
@@ -356,82 +417,196 @@
     width: 16.188rem;
 }
 
+.footer-other-link:hover {
+    transform: scale(1.08);
+}
+
+
+@media screen and (max-width:768px) {
+    .nav {
+        padding-right: 0;
+    }
+
+    .container-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .text-banner {
+        text-align: center;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .container-cursos {
+        background-color: #F6F6F6;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1.125rem;
+    }
+
+    .card-cursos {
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+    }
+
+    .container-aboutUs {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "titulo"
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+        ;
+        text-align: center;
+    }
+
+    .sobreNos-card1 {
+        justify-content: center;
+        gap: 0.3rem;
+    }
+
+    .sobreNos-card2 {
+        justify-content: center;
+        gap: 0.3rem;
+    }
+
+    .sobreNos-card3 {
+        justify-content: center;
+        gap: 0.3rem;
+        padding-top: 5rem;
+    }
+
+    .sobreNos-card4 {
+        justify-content: center;
+        gap: 0.3rem;
+    }
+
+    .container-maisConteudo {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "card1"
+            'card2'
+            'card3'
+            "btn";
+        padding: 4.125rem 0 0 0;
+    }
+
+    .maisConteudo-title {
+        width: 22.125rem;
+        line-height: 2.3rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .maisConteudo-card1 {
+        margin: 0 auto;
+    }
+
+    .maisConteudo-card2 {
+        margin: 0 auto;
+    }
+
+    .maisConteudo-card3 {
+        margin: 0 auto;
+    }
+
+    .btn-verTodos {
+        margin: 5rem auto;
+    }
+
+    .footer-other {
+        padding-right: 2.5rem;
+    }
+
+    .footer-other-link {
+        width: 12.118rem;
+    }
+
+}
+
 
 @media screen and (max-width:480px) {
-   .container-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-   }
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
 
-   .logo-header--img {
-       padding: 0;
-       padding-top: 1.25rem;
-   }
+    .logo-header--img {
+        padding: 0;
+        padding-top: 1.25rem;
+    }
 
-   .nav {
-       padding: 0;
-       padding-bottom: 0.8rem;
-   }
+    .nav {
+        padding: 0;
+        padding-bottom: 0.8rem;
+    }
 
-   .nav-items{
-       margin-right: 0.2rem;
-       font-size: 1rem;
-   }
+    .nav-items {
+        margin-right: 0.2rem;
+        font-size: 1rem;
+    }
 
-   .container-banner {
+    .container-banner {
         display: grid;
         grid-template-columns: 1fr;
         padding-top: 5rem;
-   }
+    }
 
-   .text-banner {
-       text-align: center;
-       margin: auto;
-   }
+    .text-banner {
+        text-align: center;
+        margin: auto;
+    }
 
-   .text-banner h1, p, a {
+    .text-banner h1,
+    p,
+    a {
         margin-left: 0;
-   }
+    }
 
-   .banner {
-       display: none;
-   }
+    .banner {
+        display: none;
+    }
 
-   .container-cursos {
-       grid-template-columns: 1fr;
-       padding-bottom: 5.125rem;
-   }
+    .container-cursos {
+        grid-template-columns: 1fr;
+        padding-bottom: 5.125rem;
+    }
 
-   .card-cursos {
+    .card-cursos {
         padding-top: 5.125rem;
         padding-bottom: 0;
         margin: auto;
-   }
+    }
 
-   .container-aboutUs {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-    padding-top: 5.125rem;
-    grid-template-areas: 
-    "titulo"
-    "card1"
-    "card2"
-    "card3"
-    "card4"
-    ;
-      
-}
+    .container-aboutUs {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding-top: 5.125rem;
+        grid-template-areas:
+            "titulo"
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+        ;
+
+    }
+
     .sobreNos-title {
-        width: 28.125rem;
+        width: 22.125rem;
         text-align: center;
         margin: auto;
         font-size: 2.100rem;
     }
 
-    .sobreNos-card1{
+    .sobreNos-card1 {
         flex-direction: column;
         margin-top: 4.125rem;
         margin-bottom: 0;
@@ -463,16 +638,16 @@
     .container-maisConteudo {
         grid-template-columns: 1fr;
         grid-template-areas:
-        "title"
-        "card1" 
-        'card2' 
-        'card3'
-        "btn";
+            "title"
+            "card1"
+            'card2'
+            'card3'
+            "btn";
         padding: 4.125rem 0 0 0;
     }
 
     .maisConteudo-title {
-        width: 28.125rem;
+        width: 22.125rem;
         line-height: 2.3rem;
         text-align: center;
         margin: 0 auto;
@@ -489,7 +664,7 @@
     .maisConteudo-card3 {
         margin: 0 auto;
     }
-    
+
     .btn-verTodos {
         margin: 5rem auto;
     }
@@ -497,10 +672,10 @@
     .container-footer {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "logo" 
-        "nav" 
-        "aside";
+        grid-template-areas:
+            "logo"
+            "nav"
+            "aside";
     }
 
     .footer-logo {
@@ -518,38 +693,12 @@
         padding: 1rem 0;
     }
 
+    .footer-logo-link {
+        text-align: center;
+    }
+
     .footer-other {
         padding: 2rem 0;
     }
-
-}
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

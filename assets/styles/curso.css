@@ -156,6 +156,13 @@ grid-area: logo;
 margin-left: 3rem;
 }
 
+
+.footer-logo-link {
+    align-self: center;
+    grid-area: logo;
+}
+
+
 .footer-nav {
 display: flex;
 flex-direction: column;
@@ -196,6 +203,82 @@ text-align: center;
 width: 16.188rem;
 }
 
+@media screen and (max-width:968px) {
+    .nav {
+        padding-right: 0;
+    }
+
+    
+    .container-top {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "texto"
+            "texto2";
+        gap: 2rem;
+    }
+
+    .top-title {
+        justify-self: center;
+        font-size: 2.438rem;
+        text-align: center;
+        width: 40rem;
+
+    }
+
+    .top-text {
+        justify-self: center;
+        text-align: center;
+        width: 40rem;
+        padding: 0 0.5rem;
+    }
+    
+    .top-img {
+        display: none;
+    }
+
+    .cursos-card {
+        grid-template-columns: 1fr;
+        gap: 0 53px;
+        width: 40rem;
+        text-align: center;
+        margin: 0 auto;
+      
+    }
+
+    .cursos-card video {
+        width: 40rem; 
+        margin: auto;
+    }
+
+    .cursos-card-wrapper {
+        text-align: center;
+    }
+
+    .curso-name {
+        padding-top:2rem;
+        width: 40rem; 
+    }
+
+    .curso-text {
+        margin: 0 auto;
+        width: 40rem; 
+
+    }
+
+    .line-cards {
+        width:40rem;
+        margin: 3rem auto;
+    }
+
+    .footer-other {
+        padding-right: 2.5rem;
+    }
+
+    .footer-other-link {
+        width: 12.118rem;
+    }
+ 
+ }
 
 @media screen and (max-width:480px) {
     .container-header {
@@ -230,11 +313,16 @@ width: 16.188rem;
     }
 
     .top-title {
+        font-size: 2.438rem;
         text-align: center;
+        width: 22.813rem;
+
     }
 
     .top-text {
         text-align: center;
+        width: 22.813rem;
+        padding: 0 0.5rem;
     }
     
     .top-img {
@@ -247,6 +335,12 @@ width: 16.188rem;
         width: 29.375rem;
         text-align: center;
         margin: 0 auto;
+        max-width: 23.438rem;
+    }
+
+    .cursos-card video {
+        width: 22.813rem; 
+        margin: auto;
     }
 
     .cursos-card-wrapper {
@@ -255,15 +349,17 @@ width: 16.188rem;
 
     .curso-name {
         padding-top:2rem;
+        width: 22.813rem; 
     }
 
     .curso-text {
         margin: 0 auto;
+        width: 22.813rem; 
 
     }
 
     .line-cards {
-        width: 27rem;
+        width: 22rem;
         margin: 3rem auto;
     }
 

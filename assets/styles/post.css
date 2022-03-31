@@ -1,6 +1,6 @@
 .container-header {
     align-items: center;
-    background-color:#2E948A;
+    background-color: #2E948A;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-between;
@@ -12,6 +12,11 @@
 .logo-header--img {
     padding-left: 5.125rem;
 }
+
+.logo-header--img:hover {
+    transform: scale(1.02);
+}
+
 
 .nav {
     padding-right: 6.438rem;
@@ -26,6 +31,10 @@
     text-transform: uppercase;
 }
 
+.nav-items:hover {
+    transform: scale(1.03);
+}
+
 .container-article {
     display: grid;
     grid-template-columns: 1fr;
@@ -33,7 +42,7 @@
     margin: 0 auto;
     padding-bottom: 4.688rem;
 }
-   
+
 
 .wrapper-title {
     display: flex;
@@ -88,13 +97,13 @@
 
 
 .container-cursos {
-     background-color: #F6F6F6;
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-areas: 
-     "title title title"
-     "card1 card2 card3"
-     ;
+    background-color: #F6F6F6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title title"
+        "card1 card2 card3"
+    ;
 }
 
 .cursos-title {
@@ -111,10 +120,10 @@
 
 
 .card-cursos1 {
-  padding-bottom: 8.125rem;
-  justify-self: center;
-  text-align: center;
-  grid-area: card1;
+    padding-bottom: 8.125rem;
+    justify-self: center;
+    text-align: center;
+    grid-area: card1;
 }
 
 
@@ -123,7 +132,7 @@
     justify-self: center;
     text-align: center;
     grid-area: card2;
-  }
+}
 
 
 .card-cursos3 {
@@ -131,21 +140,21 @@
     justify-self: center;
     text-align: center;
     grid-area: card3;
-  }
+}
 
 .card-cursos--img1 {
-    width:18rem;
-    height:16.875rem;
+    width: 18rem;
+    height: 16.875rem;
 }
 
 .card-cursos--img2 {
     width: 14.875rem;
-    height:16.875rem;
+    height: 16.875rem;
 }
 
 .card-cursos--img3 {
     width: 11.688rem;
-    height:16.875rem;
+    height: 16.875rem;
 }
 
 .card-cursos--title {
@@ -185,7 +194,7 @@
 
 
 .container-footer {
-    background-color:#419488;
+    background-color: #419488;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "logo nav aside";
@@ -195,157 +204,243 @@
 }
 
 .footer-logo {
-align-self: center;
-grid-area: logo;
-margin-left: 3rem;
+    align-self: center;
+    grid-area: logo;
+    margin-left: 3rem;
 }
 
+.footer-logo:hover {
+    transform: scale(1.03);
+}
+
+
+.footer-logo-link {
+    align-self: center;
+    grid-area: logo;
+}
+
+
 .footer-nav {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 0.6rem;
-grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    grid-area: nav;
 }
 
 .footer-nav-links {
-color: #FFFFFF;
-font-size: 1.25rem;
-font-family: 'Ubuntu', sans-serif;
-font-weight: 400;
-line-height: 1.25rem;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+
+.footer-nav-links:hover {
+    transform: scale(1.1);
 }
 
 .footer-other {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 0.6rem;
-grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    grid-area: aside;
 }
 
 .footer-other-link {
-border: 0.13rem solid #FFFFFF;
-border-radius: 3.875rem;
-color: #FFFFFF;
-font-size: 1.25rem;
-font-family: 'Ubuntu', sans-serif;
-font-weight: 400;
-height: 3.188rem;
-line-height: 1.25rem;
-padding-top: 0.75rem;
-text-align: center;
-width: 16.188rem;
+    border: 0.13rem solid #FFFFFF;
+    border-radius: 3.875rem;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    height: 3.188rem;
+    line-height: 1.25rem;
+    padding-top: 0.75rem;
+    text-align: center;
+    width: 16.188rem;
 }
+
+.footer-other-link:hover {
+    transform: scale(1.08);
+}
+
+
+
+@media screen and (max-width:768px) {
+    .nav {
+        padding-right: 0;
+    }
+
+    .container-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .text-banner {
+        text-align: center;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .container-article {
+        max-width: 47.5rem;
+        text-align: center;
+    }
+
+    .post {
+        margin: 0 auto;
+        max-width: 40rem;
+    }
+
+    .post p {
+        padding-left: 0.6rem;
+        width: 40rem;
+        text-align: center;
+    }
+
+    .post h2 {
+        padding-left: 0.6rem;
+        width: 40rem;
+    }
+
+    .wrapper-title {
+        text-align: center;
+        width: 40rem;
+    }
+
+    .wrapper-title h1 {
+        font-size: 2.125rem;
+        line-height: 2.8rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .post-img {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .container-cursos {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "card1"
+            "card2"
+            "card3"
+    }
+
+    .footer-other {
+        padding-right: 2.5rem;
+    }
+
+    .footer-other-link {
+        width: 12.118rem;
+    }
+
+}
+
+
 
 
 @media screen and (max-width:480px) {
     .container-header {
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     gap: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
     }
- 
+
     .logo-header--img {
         padding: 0;
         padding-top: 1.25rem;
     }
- 
+
     .nav {
         padding: 0;
         padding-bottom: 0.8rem;
     }
- 
-    .nav-items{
+
+    .nav-items {
         margin-right: 0.2rem;
         font-size: 1rem;
     }
 
-        .container-footer {
-         display: grid;
-         grid-template-columns: 1fr;
-         grid-template-areas: 
-         "logo" 
-         "nav" 
-         "aside";
-     }
- 
-     .container-article {
-         max-width: 29.375rem;
-     }
+    .container-article {
+        max-width: 29.375rem;
+    }
 
-     .post {
+    .post {
         margin: 0 auto;
         max-width: 27rem;
-     }
+    }
 
-     .wrapper-title {
-         text-align: center;
-     }
+    .post p {
+        padding-left: 0.6rem;
+        width: 22.118rem;
+    }
 
-     .wrapper-title h1 {
+    .post h2 {
+        padding-left: 0.6rem;
+        width: 22.118rem;
+    }
+
+    .wrapper-title {
+        text-align: center;
+        width: 23.438rem;
+    }
+
+    .wrapper-title h1 {
+        font-size: 2.125rem;
         line-height: 2.8rem;
         padding-bottom: 0.3rem;
-     }
+    }
 
-     .post-img {
-         width: 28rem;
-         height: 28rem;
-     }
+    .post-img {
+        width: 22rem;
+        height: 22rem;
+    }
 
-     .container-cursos {
-            grid-template-columns: 1fr;
-            grid-template-areas:
+    .container-cursos {
+        grid-template-columns: 1fr;
+        grid-template-areas:
             "title"
-            "card1" 
-            "card2" 
+            "card1"
+            "card2"
             "card3"
-     }
+    }
 
- .footer-logo {
-    align-items: center;
-    justify-self: center;
-    margin-left: 0;
-    padding: 1rem 0;
+    .container-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "nav"
+            "aside";
+    }
+
+
+    .footer-logo {
+        align-items: center;
+        justify-self: center;
+        margin-left: 0;
+        padding: 1rem 0;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem;
+        padding: 1rem 0;
+    }
+
+    .footer-other {
+        padding: 2rem 0;
+    }
+
 }
-
-.footer-nav {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1.6rem;
-    padding: 1rem 0;
-}
-
-.footer-other {
-    padding: 2rem 0;
- }
-    
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
