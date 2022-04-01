@@ -17,6 +17,10 @@
     transform: scale(1.02);
 }
 
+.logo-header--img:hover {
+    transform: scale(1.02);
+}
+
 
 .nav {
     padding-right: 6.438rem;
@@ -29,6 +33,10 @@
     font-family: 'Ubuntu', sans-serif;
     margin-right: 2.5rem;
     text-transform: uppercase;
+}
+
+.nav-items:hover {
+    transform: scale(1.03);
 }
 
 .nav-items:hover {
@@ -437,6 +445,10 @@
         align-items: center;
         gap: 1.6rem;
         padding: 1rem 0;
+    }
+
+    .footer-logo-link {
+        text-align: center;
     }
 
     .footer-other {

@@ -13,6 +13,10 @@
     padding-left: 5.125rem;
 }
 
+.logo-header--img:hover {
+    transform: scale(1.02);
+}
+
 .nav {
     padding-right: 6.438rem;
 }
@@ -156,6 +160,10 @@ grid-area: logo;
 margin-left: 3rem;
 }
 
+.footer-logo:hover {
+    transform: scale(1.03);
+}
+
 
 .footer-logo-link {
     align-self: center;
@@ -180,6 +188,11 @@ font-weight: 400;
 line-height: 1.25rem;
 }
 
+.footer-nav-links:hover {
+    transform: scale(1.1);
+}
+
+
 .footer-other {
 display: flex;
 flex-direction: column;
@@ -201,6 +214,10 @@ line-height: 1.25rem;
 padding-top: 0.75rem;
 text-align: center;
 width: 16.188rem;
+}
+
+.footer-other-link:hover {
+    transform: scale(1.08);
 }
 
 @media screen and (max-width:968px) {
@@ -386,6 +403,10 @@ width: 16.188rem;
          gap: 1.6rem;
          padding: 1rem 0;
      }
+
+     .footer-logo-link {
+        text-align: center;
+    }
  
      .footer-other {
          padding: 2rem 0;
